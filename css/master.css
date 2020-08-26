@@ -348,3 +348,37 @@ body.modal-open img {
   cursor: zoom-out;
   }
 }
+
+/* About page styles */
+#about img {
+  margin:0 auto;
+}
+
+.aboutinfo {
+  padding: 0 4em;
+  line-height: 2;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.heading {
+  margin-bottom: 2em;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 960px), screen and (max-height: 550px) {
+#about {
+  margin:4em auto;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .aboutinfo {
+    margin-top: 4em;
+    text-align: center;
+  }
+}
