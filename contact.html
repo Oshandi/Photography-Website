@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="">
+    <title>Diyon Photography</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/master.css">
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+
+  <header>
+    <a id="toggle" href="#">
+      <div class="menutoggle">
+        <span></span>
+      </div>
+    </a>
+
+    <menu class="text-center">
+      <div id="brand"><a href="index.html"><h3 >Diyon Photography</h3></a></div>
+
+      <ul class="menuContent">
+        <li>
+          <ul class="list">
+            <a href="index.html"><li>Gallery</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="contact.html"><li class="active">Contact</li></a>
+          </ul>
+        </li>
+      </ul>
+
+    </menu>
+  </header>
+
+  <div class="vcenter">
+    <div id="contact" class="container section">
+      <div class="row">
+        <div class="col-sm-6 col-xs-12 ">
+          <form class ="contactform" method="POST" action="contactform.php" autocomplete="off">
+            <p class="heading">Contact Us</p>
+            <input id="formName" class="form-control" type="text" placeholder="Name" name="name" required>
+            <input id="formEmail" class="form-control" type="email" placeholder="Email" name="email" required>
+            <textarea id="formMessage" rows="5" class="form-control" placeholder="Message" name="message" required></textarea>
+            <button id="formBtn" class="btn btn-default form-control">Send</button>
+            <p id="formStatus" class="form-control"></p>
+          </form>
+        </div> <!-- col-sm-6 col-xs-12  -->
+
+        <div class="col-sm-6 col-xs-12 ">
+          <div class="contactinfo">
+            <p class="highlight">Thanks for visiting Diyon Photography!</p>
+            <p>Tel (LK) : +94 767 836 885</p>
+            <p>Tel (IT) : +39 366 144 9897</p>
+            <p>Email : avishkadiyon@gmail.com</p>
+            <p>Address : 42/C, Gampaha Rd, Minuwangoda</p>
+
+            <div class="social">
+              <a href="https://web.facebook.com/diyonphotography/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="https://twitter.com/avishka1"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/diyon_photography/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://plus.google.com/112071642644971414053"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div> <!-- social  -->
+          </div> <!-- contactinfo  -->
+        </div> <!-- col-sm-6 col-xs-12  -->
+
+      </div> <!-- .row -->
+    </div> <!-- contact  -->
+  </div> <!-- vcenter  -->
+
+  <script src="js/main.js"></script>
+  </body>
+</html>
