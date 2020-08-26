@@ -87,6 +87,7 @@ img {
   max-width: 100%;
   display: block;
 }
+
 .btn {
   border-radius: 0;
   text-transform: uppercase;
@@ -120,18 +121,67 @@ menu {
   left:0;
   width: 200px;
   height: 100%;
-  background: black;
   background:rgba(255,255,255,1);
-  z-index: 100;
+  box-shadow: 0 0 5px 0 #cecece;
+  z-index: 999;
+}
+
+#brand{
+  position: absolute;
+  top: 10%;
+  left:50%;
+  -webkit-transform: translate(-50%,-2%);
+  -moz-transform: translate(-50%,-2%);
+  transform: translate(-50%,-2%);
+}
+
+#brand h3{
+  color: #333;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+}
+
+.menuContent{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  text-align: left;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.menuContent li{
+  display: inline-block;
+  width:100%;
+}
+
+.list li{
+  line-height: 2;
+  cursor: pointer;
+}
+
+.social{
+  margin: auto;
+  width: 50%;
+}
+
+.list li.active,
+.social a:hover{
+  color: #aaa;
+}
+
+.list,
+.contact{
+  padding-top:3em;
 }
 
 /* Start of menu media query */
-@media screen and (max-width: 960px), screen and (max-height: 550px) {
+@media screen and (max-width: 720px), screen and (max-height: 550px) {
   .menutoggle{
   position: fixed;
-  top: 10px;
-  left: 10px;
-  padding: 10px 35px 16px 0;
+  top: 30px;
+  left: 30px;
   cursor: pointer;
   z-index:1000;
   }
@@ -191,6 +241,7 @@ menu {
 menu{
   visibility: hidden;
   opacity: 0;
+  height: 100%;
   width: 100%;
   background:rgba(255,255,255,0.9);
   -moz-transition: opacity 0.3s ease-in-out;
@@ -202,55 +253,11 @@ menu.active{
   visibility: visible;
   opacity: 1;
   }
+
+.menuContent {
+  text-align: center;
+  }
 }
 /* End of menu media query */
 
-#brand{
-  position: absolute;
-  top: 10%;
-  left:50%;
-  -webkit-transform: translate(-50%,-2%);
-  -moz-transform: translate(-50%,-2%);
-  transform: translate(-50%,-2%);
-}
-
-#brand h3{
-  color: #333;
-  font-size: 24px;
-  letter-spacing: 0.2px;
-}
-
-.menuContent{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-}
-
-.menuContent li{
-  display: inline-block;
-  width:100%;
-}
-
-.list li{
-  line-height: 2;
-  text-align: left;
-  cursor: pointer;
-}
-
-.social{
-  margin: auto;
-  width: 50%;
-}
-
-.list li.active,
-.social a:hover{
-  color: #aaa;
-}
-
-.list,
-.contact{
-  padding-top:3em;
-}
+/* */
