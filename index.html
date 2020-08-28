@@ -23,6 +23,16 @@
   </head>
 
   <body>
+
+    <div class="loading">
+      <div class="progress-bar">
+    	  <span class="bar">
+    	    <span class="progress"></span>
+    	  </span>
+    	</div>
+    </div>
+
+    <main> <!-- content which will be loaded after the preloader -->
     <header>
 
       <a id="toggle" href="#">
@@ -526,8 +536,14 @@
 	    </div>
 	</div>
 
-
-
+  </main>
+  <script type="text/javascript">
+    $(window).on("load",function(){
+  	   setTimeout(function() {
+  	      $('body').addClass('loaded');
+  	   }, 500);
+     });
+  </script>
   <script src="js/main.js"></script>
   </body>
 </html>

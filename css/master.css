@@ -425,3 +425,155 @@ body.modal-open img {
     padding-top: 4em;
   }
 }
+
+/* Preloader styles */
+@-webkit-keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes loader {
+  0% {
+    width: 0;
+  }
+  20% {
+    width: 10%;
+  }
+  25% {
+    width: 24%;
+  }
+  43% {
+    width: 41%;
+  }
+  56% {
+    width: 50%;
+  }
+  66% {
+    width: 52%;
+  }
+  71% {
+    width: 60%;
+  }
+  75% {
+    width: 76%;
+  }
+  94% {
+    width: 86%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.loading{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: #fff;
+  z-index: 10000;
+}
+
+.loading .progress-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height:2px;
+}
+.loading .progress-bar span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.loading .bar {
+  background:#eee;
+}
+
+.loading .progress {
+  border-radius: 0;
+  width: 0;
+  -webkit-animation: loader 8s ease infinite;
+  -moz-animation: loader 8s ease infinite;
+  animation: loader 8s ease infinite;
+  background: #444;
+
+}
+
+.loaded .loading .progress-bar {
+  opacity: 0;
+  -webkit-transition: all 0.4s 1s ease-out;
+  transition: all 0.4s 1s ease-out;
+}
+
+.loaded .loading {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.4s 1s ease-out;
+  transition: all 0.4s 1s ease-out;
+}
